@@ -21,8 +21,7 @@ import {
   X,
 } from 'lucide-react';
 
-const profilePortrait = '/assets/christine-diones-profile.png';
-const portraitFallback = 'https://images.pexels.com/photos/19222080/pexels-photo-19222080.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
+const profilePortrait = './73D04F38-92E4-4629-92DC-16F55E624D6C.png';
 
 const navItems = [
   ['Home', 'home'], ['About', 'about'], ['Services', 'services'], ['Experience', 'experience'],
@@ -133,7 +132,7 @@ function App() {
               <p className="hero-note"><Sparkles size={15} /> More than task support. A partner in getting things done.</p>
             </div>
             <div className="hero-art reveal reveal-delay">
-              <div className="hero-image-frame"><img src={profilePortrait} alt="Christine C. Diones professional portrait" onError={(event) => { event.currentTarget.src = portraitFallback; }} /><div className="image-stamp">OPERATIONS<br /><span>+</span> EA</div></div>
+              <div className="hero-image-frame"><img src={profilePortrait} alt="Christine C. Diones professional portrait" /><div className="image-stamp">OPERATIONS<br /><span>+</span> EA</div></div>
               <div className="hero-float hero-float-top"><span className="status-dot" /> Open to remote opportunities</div>
               <div className="hero-float hero-float-bottom">Operations + EA <strong>= VA Tine</strong></div>
               <div className="hero-vertical">CHRISTINE C. DIONES · 2026</div>
@@ -145,6 +144,7 @@ function App() {
         <section id="about" className="section-pad section-cream">
           <div className="container about-grid">
             <div className="section-intro reveal"><div className="eyebrow">Get to know me</div><h2>The person behind the <em>processes.</em></h2><div className="about-quote">“Good support goes beyond completing a task. It means understanding the objective, anticipating what needs attention, and taking responsibility for the work.”</div></div>
+            <div className="about-portrait reveal reveal-delay"><img src={profilePortrait} alt="Christine C. Diones" /></div>
             <div className="about-copy reveal reveal-delay"><p>I’m Christine C. Diones, professionally known as Tine.</p><p>My professional journey has taken me through customer service, business operations, housing coordination, lead management, and social media marketing.</p><p>Through these experiences, I’ve developed a practical understanding of how businesses operate and what it takes to keep things moving.</p><p>Today, I bring that mindset into every project and business I support.</p><div className="education"><span>A little about my background</span><strong>BA English Communication</strong><small>Pangasinan State University · 2021–2025</small><strong>Education units</strong><small>Perpetual Help College of Pangasinan · 2025</small></div></div>
           </div>
           <div className="container highlight-row reveal"><div><b>01</b><span>Operations-minded</span></div><div><b>02</b><span>Communication-driven</span></div><div><b>03</b><span>Ownership-focused</span></div></div>
