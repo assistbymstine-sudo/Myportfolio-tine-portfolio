@@ -21,7 +21,8 @@ import {
   X,
 } from 'lucide-react';
 
-const portrait = 'https://images.pexels.com/photos/19222080/pexels-photo-19222080.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
+const profilePortrait = '/assets/christine-diones-profile.png';
+const portraitFallback = 'https://images.pexels.com/photos/19222080/pexels-photo-19222080.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
 
 const navItems = [
   ['Home', 'home'], ['About', 'about'], ['Services', 'services'], ['Experience', 'experience'],
@@ -132,7 +133,7 @@ function App() {
               <p className="hero-note"><Sparkles size={15} /> More than task support. A partner in getting things done.</p>
             </div>
             <div className="hero-art reveal reveal-delay">
-              <div className="hero-image-frame"><img src={portrait} alt="Professional portrait placeholder" /><div className="image-stamp">OPERATIONS<br /><span>+</span> EA</div></div>
+              <div className="hero-image-frame"><img src={profilePortrait} alt="Christine C. Diones professional portrait" onError={(event) => { event.currentTarget.src = portraitFallback; }} /><div className="image-stamp">OPERATIONS<br /><span>+</span> EA</div></div>
               <div className="hero-float hero-float-top"><span className="status-dot" /> Open to remote opportunities</div>
               <div className="hero-float hero-float-bottom">Operations + EA <strong>= VA Tine</strong></div>
               <div className="hero-vertical">CHRISTINE C. DIONES · 2026</div>
