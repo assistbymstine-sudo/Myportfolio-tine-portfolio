@@ -21,7 +21,7 @@ import {
   X,
 } from 'lucide-react';
 
-const profilePortrait = './73D04F38-92E4-4629-92DC-16F55E624D6C.png';
+const profilePortrait = `${import.meta.env.BASE_URL}73D04F38-92E4-4629-92DC-16F55E624D6C.png`;
 
 const navItems = [
   ['Home', 'home'], ['About', 'about'], ['Services', 'services'], ['Experience', 'experience'],
